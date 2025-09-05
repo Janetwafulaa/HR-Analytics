@@ -4,7 +4,6 @@ This project explores an **HR dataset** containing employee information such as 
 We apply data cleaning, visualization, and **Principal Component Analysis (PCA)** to extract insights and reduce complexity.
 
 ---
-
 ##  Project Overview
 
 The project follows this pipeline:
@@ -19,11 +18,11 @@ The project follows this pipeline:
 
 ## 1. Data Cleaning
 
-- Loaded the dataset (`HRDataset_v14.csv`).
+- Loaded the dataset (HRDataset_v14.csv).
 - Removed or handled:
   - **Missing values** in engagement survey, satisfaction scores, etc.
   - **Duplicate rows** if any.
-- Dropped irrelevant identifiers (e.g., `EmpID`, `ManagerID`, `DeptID`) that don’t add value to PCA.
+- Dropped irrelevant identifiers (e.g., EmpID, ManagerID, DeptID) that don’t add value to PCA.
 - Encoded categorical variables if needed for modeling.
 
 ---
@@ -44,9 +43,9 @@ The project follows this pipeline:
 ## 3. Feature Engineering
 
 - Created subsets of data for analysis:
-  - Engagement-related features: `EngagementSurvey`, `EmpSatisfaction`, `Absences`.
+  - Engagement-related features: EngagementSurvey, EmpSatisfaction, Absences.
   - Performance & salary analysis features.
-- Standardized numeric features using **`StandardScaler`** (important for PCA, since features are on different scales).
+- Standardized numeric features using **StandardScaler** (important for PCA, since features are on different scales).
 
 ---
 
@@ -67,7 +66,7 @@ The project follows this pipeline:
 - **2D PCA Projection**:
   - Employees plotted in PCA space, colored by department or performance score.
 - **Loadings Plot**:
-  - Visualizes how `Salary`, `Absences`, and `EngagementSurvey` contribute to PC1 and PC2.
+  - Visualizes how Salary, Absences, and EngagementSurvey contribute to PC1 and PC2.
 - **Clustering Comparison**:
   - K-Means clustering before and after PCA to evaluate dimensionality reduction effects.
 
